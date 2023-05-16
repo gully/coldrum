@@ -1,0 +1,111 @@
+\documentclass[twocolumn]{aastex631}
+\usepackage{hyperref}
+\bibliographystyle{aasjournal}
+\usepackage[caption=false]{subfig}
+\usepackage{booktabs}
+\usepackage{censor}
+\usepackage[arrowdel]{physics}
+\usepackage{mathtools}
+\usepackage{outlines}
+\usepackage{lipsum}  
+\usepackage{amsmath,bm}
+
+\definecolor{belize}{RGB}{41, 128, 185}
+\definecolor{peter}{RGB}{52, 152, 219}
+\definecolor{nephritis}{RGB}{39, 174, 96}
+\definecolor{asbestos}{RGB}{127, 140, 141}
+\definecolor{clouds}{RGB}{236, 240, 241}
+
+\hypersetup{linkcolor=belize, citecolor=belize,filecolor=asbestos,urlcolor=peter}
+
+\DeclareMathOperator{\resample}{resample}
+
+\def\Teff{T_{\rm eff}}
+\def\vsini{v\sin{i}}
+\def\kmps{\mathrm{km}\;\mathrm{s}^{-1}}
+
+\begin{document}
+\shorttitle{\emph{blas\'e}: Interpretable Machine Learning for Spectroscopy}
+\shortauthors{Gully-Santiago \& Morley}
+\title{Semi-empirical Earth-atmosphere spectra from telluric standard stars with interpretable machine learning}
+
+\author{Michael Gully-Santiago}
+\affiliation{The University of Texas at Austin Department of Astronomy}
+
+\author{Caroline V. Morley}
+\affiliation{The University of Texas at Austin Department of Astronomy}
+
+\collaboration{1}{The \emph{blas\'e} contributors}
+
+\begin{abstract}
+
+    TBD
+
+\end{abstract}
+
+\keywords{High resolution spectroscopy (2096), Stellar spectral lines (1630), Astronomy data modeling(1859), GPU Computing (1969), Calibration (2179), Radial Velocity (1332), Maximum likelihood estimation (1901), Deconvolution (1910), Atomic spectroscopy (2099), Stellar photospheres (1237)}
+
+\section{Introduction}\label{sec:intro}
+
+
+
+We use the PHOENIX models \citep{husser13}.  
+
+
+\section{Methodology: Enchancements to blas\'e}\label{methodology}
+
+We make some improvements to blase.
+
+
+
+\section{Discussion}\label{secDiscuss}
+
+
+\section{Conclusions}
+TBD
+
+\pagebreak
+\newpage
+
+\begin{acknowledgments}
+    \footnotesize{
+    
+        This material is based upon work supported by the National Aeronautics and Space Administration under Grant Numbers 80NSSC21K0650 for the NNH20ZDA001N-ADAP:D.2 program,
+        and 80NSSC20K0257 for the XRP program issued through the Science Mission Directorate.
+
+        We acknowledge the National Science Foundation, which supported the work presented here under Grant No. 1910969.
+
+        These results are based on observations obtained with the Habitable-zone Planet Finder Spectrograph on the HET. The HPF team was supported by NSF grants AST-1006676, AST-1126413, AST-1310885, AST-1517592, AST-1310875, AST-1910954, AST-1907622, AST-1909506, ATI 2009889, ATI-2009982, and the NASA Astrobiology Institute (NNA09DA76A) in the pursuit of precision radial velocities in the NIR. The HPF team was also supported by the Heising-Simons Foundation via grant 2017-0494.
+
+        The Hobby-Eberly Telescope (HET) is a joint project of the University of Texas at Austin, the Pennsylvania State University, Ludwig-Maximilians-Universit\"at M\"unchen, and Georg-August-Universit\"at G\"ottingen. The HET is named in honor of its principal benefactors, William P. Hobby and Robert E. Eberly.
+        }
+\end{acknowledgments}
+
+
+\facilities{HET (HPF)}
+
+\software{ pandas \citep{mckinney10},
+    matplotlib \citep{hunter07},
+    astropy \citep{exoplanet:astropy13,exoplanet:astropy18},
+    exoplanet \citep{2021JOSS....6.3285F},
+    numpy \citep{harris2020array},
+    scipy \citep{2020SciPy-NMeth},
+    ipython \citep{perez07},
+    starfish \citep{czekala15},
+    seaborn \citep{Waskom2021},
+    pytorch \citep{2019arXiv191201703P},
+    muler \citep{2022JOSS....7.4302G}}
+
+
+\bibliography{ms}
+
+
+\clearpage
+
+\appendix
+\restartappendixnumbering
+
+\section{More info} \label{appendix1}
+tbd
+\end{document}
+
